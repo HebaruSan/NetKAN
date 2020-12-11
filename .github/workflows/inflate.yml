@@ -11,11 +11,7 @@ on:
 jobs:
     inflate:
         runs-on: ubuntu-latest
-        container:
-            image: ubuntu:latest
         steps:
-            - name: Install a version of git that works (actions/checkout won't create a .git folder otherwise)
-              run: apt-get update && apt-get install -y git
             - name: Get NetKAN repo
               uses: actions/checkout@v2
               with:
