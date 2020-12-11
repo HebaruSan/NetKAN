@@ -9,7 +9,7 @@ on:
             - synchronize
             - reopened
 jobs:
-    inflate:
+    Inflate:
         runs-on: ubuntu-latest
         steps:
             - name: Get NetKAN repo
@@ -20,3 +20,4 @@ jobs:
               uses: HebaruSan/xKAN-meta_testing@github_action
               with:
                   source: commits
+                  log level: debug
