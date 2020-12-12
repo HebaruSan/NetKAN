@@ -21,8 +21,8 @@ jobs:
               with:
                   path: /cache
                   key: downloads-${{ github.run_id }}
-                  restore-keys:
-                      - downloads-
+                  restore-keys: |
+                      downloads-
             - name: Test modified netkans
               uses: HebaruSan/xKAN-meta_testing@github_action
               with:
