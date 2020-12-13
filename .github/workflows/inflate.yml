@@ -29,4 +29,4 @@ jobs:
                   source: commits
                   log level: debug
                   pull request body: ${{ github.event.pull_request.body }}
-                  comment bodies: ${{ github.event.pull_request.comments[github.event.pull_request.comments-1].body }}
+                  comment bodies: ${{ github.event.pull_request.comments[github.event.pull_request.comments].body }}
