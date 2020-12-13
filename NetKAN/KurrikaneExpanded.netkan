@@ -4,10 +4,6 @@
     "$kref":        "#/ckan/spacedock/1338",
     "$vref":        "#/ckan/ksp-avc",
     "license":      "CC-BY-NC-SA",
-    "tags": [
-        "parts",
-        "uncrewed"
-    ],
     "install": [ {
         "find": "Kurrikane",
         "install_to": "GameData"
