@@ -27,6 +27,7 @@ jobs:
               uses: HebaruSan/xKAN-meta_testing@github_action
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  GITHUB_BASE_REF: ${{ github.base_ref }}
               with:
                   source: commits
                   log level: debug
