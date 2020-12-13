@@ -23,13 +23,13 @@ jobs:
                   key: downloads-${{ github.run_id }}
                   restore-keys: |
                       downloads-
-            - name: Check for comment containing \#overwrite_cache
+            - name: 'Check for comment containing #overwrite_cache'
               id: overwritecomment
               uses: khan/pull-request-comment-trigger@master
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               with:
-                  trigger: \#overwrite_cache
+                  trigger: '#overwrite_cache'
                   reaction: rocket
             - name: Test modified netkans
               uses: HebaruSan/xKAN-meta_testing@github_action
