@@ -29,3 +29,4 @@ jobs:
                   source: commits
                   log level: debug
                   pull request body: ${{ github.event.pull_request.body }}
+                  comment bodies: ${{ join(github.event.pull_request.comments.*.body, ' ') }}
