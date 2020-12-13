@@ -24,7 +24,7 @@ jobs:
                   restore-keys: |
                       downloads-
             - name: Test modified netkans
-              uses: HebaruSan/xKAN-meta_testing@github_action
+              uses: KSP-CKAN/xKAN-meta_testing@github_action
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                   GITHUB_PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
