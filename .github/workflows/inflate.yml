@@ -24,6 +24,7 @@ jobs:
                   restore-keys: |
                       downloads-
             - name: Check for comment containing \#overwrite_cache
+              id: overwritecomment
               uses: khan/pull-request-comment-trigger@master
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
