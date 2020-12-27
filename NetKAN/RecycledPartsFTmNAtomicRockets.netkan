@@ -10,7 +10,8 @@
     ],
     "install": [ {
         "find": "ftmn",
-        "install_to": "GameData/SpaceTuxIndustries/RecycledParts"
+        "install_to": "GameData/SpaceTuxIndustries/RecycledParts",
+        filter: [ ".build" ]
     } ],
     "depends": [
         { "name": "ModuleManager" },

@@ -6,6 +6,9 @@
     "tags": [
         "parts"
     ],
+    "tags": [
+        "duplicate-key"
+    ],
     "install": [ {
         "file": "WheelsCollection",
         "install_to": "GameData"

@@ -18,7 +18,7 @@
         { "name": "B9PartSwitch" },
         { "name": "CommunityCategoryKit" },
         { "name": "KerbalPlanetaryBaseSystems" },
-        { "name": "ModuleManager" },
+        { "name": "ModuleManager" }
         { "name": "StationPartsExpansionRedux" },
         { "name": "ToolbarController" },
         { "name": "SpaceTuxLibrary" }

@@ -47,7 +47,7 @@
         { "name"        : "ConnectedLivingSpace" }
     ],
     "provides"          : [
-        "NehemiahInc-Complete",
+        'NehemiahInc-Complete',
         "NehemiahScienceCommon",
         "NehemiahMultiPurposeParts",
         "KeminiResearchProgram",
