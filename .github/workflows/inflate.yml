@@ -29,12 +29,13 @@ jobs:
                   restore-keys: |
                       downloads-
             - name: Test modified netkans
-              uses: KSP-CKAN/xKAN-meta_testing@master
+              uses: HebaruSan/xKAN-meta_testing@fix/jsonlint
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                   GITHUB_PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
                   GITHUB_EVENT_BEFORE: ${{ github.event.before }}
               with:
                   source: commits
+                  log level: debug
                   diff meta root: .CKAN-meta
                   pull request body: ${{ github.event.pull_request.body }}
